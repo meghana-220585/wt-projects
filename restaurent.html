@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>restaurent</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="back">
+        <div class="navbar">
+            <h1 style="color:red;">Meghana's Restaurent</h1>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#menu">MENU</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#orders">ORDERS</a>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>Are you Hungry?Don't Waste Time</h1>
+            <h2>Order Now</h2>
+            <button>Watch More</button>
+        </div>
+    </div>
+    <section id="menu">
+        <h1 align="center" class="menu-title">Menu</h1>
+        <h1 class="sub-title">Breakfast</h1>
+        <div class="break">
+            <div class="item"> 
+                <img src="idly.jpeg" onclick="showidly()">
+                <p id="idly">IDLY SAMBAR</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="dosa.jpeg" onclick="showdosa()">
+                <p id="dosa">DOSA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="puri.jpeg" onclick="showpuri()">
+                <p id="puri">POORI</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="fooditem1.jpeg">
+                <p>VADA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="upma.jpeg">
+                <p>UPMA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+        </div>
+        <h1 class="sub-title">Lunch</h1>
+        <div class="break">
+            <div class="item">
+                <img src="biryani.jpeg">
+                <p>BIRYANI</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="friedrice.jpeg">
+                <p>FRIEDRICE</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="noodles.jpeg">
+                <p>NOODLES</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="parota.jpeg">
+                <p>PAROTA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="friedrice1.jpeg">
+                <p>VEG FRIED RICE</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="egg.jpeg">
+                <p>EGG CURRY</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="rice.jpeg">
+                <p>RICE</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+        </div>
+        <h1 class="sub-title">DINNER</h1>
+        <div class="break">
+            <div class="item">
+                <img src="pulihora.jpeg">
+                <p>PULIHORA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="noodles.jpeg">
+                <p>NOODLES</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="chapathi.jpeg">
+                <p>CHAPATHI</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="pulava.jpeg">
+                <p>PULAVA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="fooditem.jpeg">
+                <p>VEG PULAVA</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+            <div class="item">
+                <img src="fish1.jpeg">
+                <p>FISH</p>
+                <button onclick="orderfood()">ORDER</button>
+            </div>
+        </div>
+        <h1 class="sub-title">STARTERS</h1>
+        <div class="break">
+            <div class="item">
+                <img src="cooldrink.jpg.jpeg">
+                <p>COOL DRINKS</p>
+            </div>
+            <div class="item">
+                <img src="chocolates.jpeg">
+                <p>CHOCOLATES</p>
+            </div>
+            <div class="item">
+                <img src="icecreams.jpeg" onclick="showice()">
+                <p id="ice">ICE CREAMS</p>
+            </div>
+            <div class="item">
+                <img src="lays.jpeg" onclick="show()">
+                <p id="lays">LAYS</p>
+                
+            </div>
+        </div>
+    </section>
+    <section style="background-color:rgb(97, 101, 104);" >
+        <h1>FOOD PRICES</h1>
+        <div class="foodprices">
+        <div>
+            <h3>BREAKFAST</h3>
+            <p>IDLY SAMBAR -  30/-</p>
+            <p>DOSA        -  30/-</p>
+            <p>POORI       -  30/-</p>
+        </div>
+        <div>
+            <h3>LUNCH</h3>
+            <p>BIRYANI     -  100/- </p>
+            <p>FRIED RICE  -    70/-</p>
+            <p>POROTA-30/-</p>
+        </div>
+        <div>
+            <h3>DINNER</h3>
+            <p>PULAVA-50/-</p>
+            <p>chapathi-40/-</p>
+        </div>
+    </div>
+    </section>
+    <section id="contact" class="contacting">
+        <h1 class="menu-title" align="center">Contact Us</h1>
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" placeholder="enter your full name" required><br><br>
+            <label>E-mail</label><br>
+            <input type="email" placeholder="enter your e mail" required><br><br>
+            <label>Message</label><br>
+            <textarea placeholder="enter your message"></textarea><br><br>
+            <button type="submit" onclick="submitmsg()">Send Message</button>
+        </form>
+    </section>
+
+    <section id="#orders">
+        <h1 align="center" class="menu-title">Order Now</h1>
+         <h2 align="center">Book a Table</h2>
+        <div class="booking">
+           
+        <div class="booktable">
+            <form>
+                <input type="text" placeholder="enter your name" required>
+                <input type="tel" placeholder="mobile number" required>
+                <select>
+                    <option>Select no of people</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>6</option>
+                </select>
+                <input type="date">
+                <input type="time">
+                <button type="submit" onclick="booktable()">Book Now</button>
+            </form>
+        </div>
+        <div class="googlemap">
+            <img src="googlemap.jpeg" alt="google map">
+        </div>
+        </div>
+    </section>
+    <section class="contacting">
+        <h2>Calculate bill</h2>
+        <form>
+        Price:<input type="number" id="price"><br>
+        Qunatity:<input type="number" id="quantity"><br>
+        Discount(%):<input type="number" id="discount"><br>
+        <button onclick="calculate()">Calculate Bill</button>
+        <p id="total">Total:0/-</p>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .profile{
+            max-width:370px;
+            width:100%;
+            background-color: #f4f4f4;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            align-items:center;
+            padding:25px;
+            height:50vh;
+        }
+        body{
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            position:relative;
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background-color: blue;
+            padding:3px;
+        }
+        .image .p-img{
+            height:100%;
+            width:100%;
+            border-radius: 50%;
+            object-fit:cover;
+            border:3px solid white;
+        }
+        .profile.text{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <div class="image">
+            <img src="meghanaa9.jpg" class="p-img">
+            <div class="text">
+                <span class="name">Coding</span>
+                <span class="job">web developer</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
