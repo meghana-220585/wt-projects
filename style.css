@@ -91,16 +91,29 @@ body{
     justify-content:center;
     gap:50px;
 }
-.contacting{
-    background-color:#f2f2f2;
-    border-radius:10px;
+.contactus{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:50px;
 }
-.contacting form{
-    max-width:400px;
+.video-box{
+    width:40%;
+}
+video{
+    width:100%;
+    border-radius: 10px;
+    height:450px;
+}
+.contacting{
     margin:auto;
+    width:40%;
+    padding:20px;
+    border:2px solid #333;
+    border-radius: 10px;
 }
 .contacting input,textarea{
-    width:100%;
+    width:90%;
     padding:10px;
     margin-bottom:5px;
     border-radius:5px;

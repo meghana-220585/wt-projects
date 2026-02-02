@@ -32,3 +32,4 @@ function showpuri(){
 let orderfood=()=>{
     console.log("your item is add to orderlist")
 }
+
